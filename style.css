@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343444;
+}
+
+
+.subtitle {
+    font-weight: bold;
+}
+
+
+.modal-content {
+    background-color: #242424;
+    color: #fff;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.card {
+    background-color: #34383c;
+    display: flex;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card-body a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-body span {
+    font-size: 30px;
+}
+
+.btn {
+    background-color: #414141;
+    border: 0.2px solid #fff;
+}
+
