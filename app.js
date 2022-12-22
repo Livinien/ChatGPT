@@ -1,10 +1,7 @@
 
-// APPARITION DU MODAL AUTOMATIQUE //
+// APPARITION DU MODAL AUTOMATIQUE AU RAFRAICHISEMMENT DE LA PAGE //
 
-const myModal = document.querySelector('#animation_modal')
+$(window).on('load', function() {
+  $('#Modal_Toggle_1').modal('show');
+});
 
-myModal.addEventListener('show.bs.modal', event => {
-  if (!data) {
-    return event.preventDefault() // stops modal from being shown
-  }
-})

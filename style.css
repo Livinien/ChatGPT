@@ -5,14 +5,16 @@
 }
 
 body {
-    background-color: #343444;
+    background-color: #303434;
 }
 
+
+
+/* MODALES */
 
 .subtitle {
     font-weight: bold;
 }
-
 
 .modal-content {
     background-color: #242424;
@@ -20,8 +22,11 @@ body {
 }
 
 .modal-footer {
+    display: flex;
+    justify-content: space-between;
     border-top: none;
 }
+
 
 .card {
     background-color: #34383c;
@@ -42,8 +47,42 @@ body {
     font-size: 30px;
 }
 
-.btn {
+.btn-dark {
     background-color: #414141;
     border: 0.2px solid #fff;
+}
+
+#first-button-next {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+
+
+
+/* PAGE D'ACCUEIL */
+
+.container {
+    color: #fff;
+    margin-top: 200px;
+    width: 45%;
+}
+
+.row .icone {
+    font-size: 20px;
+    
+}
+.row .title {
+    font-size: 20px;
+    margin: 15px 0 20px 0px;
+}
+
+
+.subtitle_GPT {
+    background-color: #2c2c34;
+    padding: 15px;
+    border-radius: 10px;
+    
 }
 
