@@ -9,6 +9,13 @@ body {
 }
 
 
+/* NAVBAR */
+
+.navbar {
+    background-color: #000;
+}
+
+
 
 /* MODALES */
 
@@ -62,7 +69,21 @@ body {
 
 /* NEW CHAT AND OTHERS OPTIONS */
 
+.informations {
+    height: 100vh;
+}
+
+.row {
+    width: 100%;
+}
+
+
+
 /* CONTAINER LEFT */
+
+.container-left {
+    background-color: #202123;
+}
 
 input[type="text"]::-webkit-input-placeholder {
     color: #fff;
@@ -79,13 +100,13 @@ i {
     color: #fff;
 }
 
-a {
+.options {
     text-decoration: none;
     color: #fff;
     margin: 5px;
 }
 
-a:hover {
+.options:hover {
     color: #fff;
 }
 
@@ -94,30 +115,28 @@ hr {
 }
 
 
+
 /* CONTAINER RIGHT */
+
+.container-right {
+    color: #fff;
+    margin-top: 200px;
+}
 
 .grid {
     width: 60vw;
     margin: 0 auto;
 }
 
+.right-search {
+    margin-top: 140px;
+    margin-left: -15px;
+}
+
+
 
 
 /* HOME */
-
-.informations {
-    height: 100vh;
-}
-
-.container-left {
-    background-color: #202123;
-}
-
-.container-right {
-    color: #fff;
-    margin-top: 200px;
-    
-}
 
 .row .icone {
     font-size: 20px;
@@ -132,6 +151,7 @@ hr {
     background-color: #3E3F4B;
     padding: 15px;
     border-radius: 10px;
+    font-size: 15px;
 }
 
 .subtitle_GPT:hover {
@@ -140,8 +160,6 @@ hr {
 }
 
 .input-group {
-    display: flex;
-    justify-content: center;
     border: none;
     width: 100%;
     height: 50px;
@@ -158,9 +176,6 @@ hr {
     background-color: #40404F;
 }
 
-/* .form-control, .btn {
-    margin-top: 0px;
-} */
 
 .btn {
     background-color: #40404F;
