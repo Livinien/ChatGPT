@@ -71,18 +71,64 @@ body {
 
 .row .icone {
     font-size: 20px;
-    
 }
+
 .row .title {
     font-size: 20px;
     margin: 15px 0 20px 0px;
 }
 
-
 .subtitle_GPT {
     background-color: #2c2c34;
     padding: 15px;
     border-radius: 10px;
-    
+}
+
+.subtitle_GPT:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 100%;
+}
+
+.form-control {
+    background-color: #2b2b31;
+    padding: 10px;
+    border: none;
+}
+
+.form-control:focus {
+    background-color: #2b2b31;
+}
+
+.form-control, .btn {
+    margin-top: 270px;
+}
+
+.btn {
+    background-color: #2b2b31;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #2b2b31;
+}
+
+.subtitle-search {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -34px;
+    font-size: 14.2px;
+    color:#828288;
+}
+
+.subtitle-search a {
+    color:#828288;
 }
 
