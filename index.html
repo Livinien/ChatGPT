@@ -13,51 +13,58 @@
 </head>
 <body>
 
+
+                <!-- NAVIGATION -->
+
   <nav class="navbar fixed-top d-block d-lg-none">
     <div class="container-fluid">
       
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="fs-1 mt-5"><i class="hamburger bi bi-list"></i></span>
+        <span class="fs-1"><i class="bi bi-list"></i></span>
       </button>
       
       <h5 class="offcanvas-title text-light mt-2" id="offcanvasNavbarLabel">New chat</h5>
       
       <h5 class="offcanvas-title text-light mt-2 fs-1" id="offcanvasNavbarLabel"><i class="bi bi-plus-lg"></i></h5>
       
+     
+
+                <!-- OFFCANVAS ANIMATIONS -->
+      
       <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        
+      
         <div class="offcanvas-body bg-dark">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
+
           
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            <i class="bi bi-x-square close fs-1 text-light "data-bs-dismiss="offcanvas"></i>
+
+            <div class="informations d-flex flex-column justify-content-between h-100">
+         
+            <div class="input-group">
+              <input type="text" class="form-control input-left mx-1" placeholder="+ New chat" aria-label="Recipient's username" aria-describedby="button-addon2">
+            </div>
+
+            <div class="link d-flex flex-column">
+              <hr>
+              <div>
+                <i class="bi bi-moon"></i>
+                <a class="options" href="#">Dark Mode</a>
+              </div>
+              <div class="mt-4">
+                <i class="bi bi-discord"></i>
+                <a class="options" href="#">OpenAI Discord</a>
+              </div>
+              <div class="mt-4">
+                <i class="bi bi-box-arrow-up-right"></i>
+                <a class="options" href="#">Update & FAQ</a>
+              </div>
+              <div class="mt-4 mb-3">
+                <i class="bi bi-box-arrow-right"></i>
+                <a class="options" href="#">Log Out</a>
+              </div>
+            </div>
+        </div>
+        </div>
         </div>
       </div>
     </div>
@@ -75,9 +82,10 @@
           <h1 class="modal-title fs-5" id="Modal_Toggle_1">ChatGPT</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-
+        
+      
         <div class="modal-body">
+          <hr>
           <p class="subtitle">This is a free research preview</p>
           <div class="card">
             <div class="card-body">
@@ -117,6 +125,7 @@
         </div>
 
         <div class="modal-body">
+          <hr>
           <p class="subtitle">How we collect data</p>
 
           <div class="card">
@@ -155,6 +164,7 @@
         </div>
 
         <div class="modal-body">
+          <hr>
           <p class="subtitle">We'd love your feedback !</p>
 
           <div class="card">
@@ -172,10 +182,9 @@
           </div>
         </div>
 
-
         <div class="modal-footer">
           <button class="btn btn-dark" data-bs-target="#Modal_Toggle_2" data-bs-toggle="modal">Back</button>
-          <button class="btn btn-success" data-bs-toggle="modal">Done</button>
+          <button class="btn btn-success" data-bs-dismiss="modal">Done</button>
         </div>
       </div>
     </div>
@@ -199,19 +208,19 @@
             <div class="link d-flex flex-column">
               <hr>
               <div>
-                <i class="bi bi-moon"></i>
+                <i class="bi bi-moon mx-3"></i>
                 <a class="options" href="">Dark Mode</a>
               </div>
               <div class="mt-4">
-                <i class="bi bi-discord"></i>
+                <i class="bi bi-discord mx-3"></i>
                 <a class="options" href="">OpenAI Discord</a>
               </div>
               <div class="mt-4">
-                <i class="bi bi-box-arrow-up-right"></i>
+                <i class="bi bi-box-arrow-up-right mx-3"></i>
                 <a class="options" href="">Update & FAQ</a>
               </div>
               <div class="mt-4 mb-3">
-                <i class="bi bi-box-arrow-right"></i>
+                <i class="bi bi-box-arrow-right mx-3"></i>
                 <a class="options" href="">Log Out</a>
               </div>
             </div>

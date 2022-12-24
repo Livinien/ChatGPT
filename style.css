@@ -17,6 +17,27 @@ body {
 }
 
 
+/* OFFCANVAS ANIMATION */
+
+.row {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    left: 410px;
+    cursor: pointer;
+    color: #fff;
+    
+}
+
+.offcanvas-backdrop.show {
+    /* classe qui n'apparait pas dans le html de bootstrap */
+    background-color: rgb(94, 94, 94);
+}
+
+
 
 
 /* MODALES */
@@ -26,7 +47,7 @@ body {
 }
 
 .modal-content {
-    background-color: #343541;
+    background-color: #202123;
     color: #fff;
 }
 
@@ -36,9 +57,18 @@ body {
     border-top: none;
 }
 
+.modal-title {
+    margin-bottom: -50px;
+    font-weight: bold;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
 
 .card {
-    background-color: #34383c;
+    background-color: #2B2C2E;
     display: flex;
 }
 
@@ -188,12 +218,21 @@ hr {
     background-color: #40404F;
 }
 
+.btn-success {
+    background-color: #198754;;
+}
+
+.btn-success:hover {
+    background-color: #198754;;
+}
+
+
 .subtitle-search {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: -34px;
-    font-size: 14.2px;
+    font-size: 16px;
     color:#83858A;
 }
 
@@ -202,44 +241,73 @@ hr {
 }
 
 
+
+@media(max-width: 1330px) {
+    
+    .right-search {
+        margin-top: 46px;
+    }
+    
+    .subtitle-search {
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .subtitle-search a {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 1187px) {
+
+    .options {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1020px) {
+
+    .options {
+        font-size: 11px;
+    }
+}
+
 @media(max-width: 1190px) {
 
     .right-search {
-        margin-top: 20px;
+        margin-bottom: 120px;
     }
 
     .subtitle-search {
+        display: flex;
+        flex-direction: column;
         font-size: 10px;
     }
     .subtitle-search a {
         font-size: 10px;
     }
 }
-
-
-@media(max-width: 1330px) {
-
-    .right-search {
-        margin-top: 20px;
-    }
-
-    .subtitle-search {
-        font-size: 10px;
-    }
-    .subtitle-search a {
-        font-size: 10px;
-    }
-}
-
 
 @media(max-width: 992px) {
 
+    .right-search {
+        margin-top: 50px;
+    }
+
     .subtitle-search {
+        display: flex;
+        flex-direction: column;
         font-size: 10px;
     }
     .subtitle-search a {
         font-size: 10px;
     }
+
+    .options {
+        font-size: 15px;
+    }
+}
     
 }
 
@@ -256,14 +324,6 @@ hr {
     
 }
 
-@media(max-width: 746px) {
-
-    .subtitle-search {
-        display: flex;
-        flex-direction: column;
-        font-size: 7px;
-    }
-}
 
 
 
